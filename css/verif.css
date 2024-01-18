@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+@font-face {
+    font-family: pubg;
+    src: url('pubg.ttf');
+}
+
+@font-face {
+    font-family: frank;
+    src: url('Frank-Regular.ttf')
+}
+
+@font-face {
+    font-family: brixton;
+    src: url('Brixton_Wood-Vector.ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    touch-action: pan-x pan-y;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('https://battlegroundsmobileindiaesports.info/wp-content/themes/battleground/assets/images/calendar.png') no-repeat;
+    background-size: cover;
+    padding: 0 0 120px 0;
+}
+
+.wrap .headers {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 50px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    z-index: 999;
+    border-bottom: 1px solid #999;
+}
+
+.headers .logo {
+    position: relative;
+    width: 120px;
+    height: 100%;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.headers .utils {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.utils .socialmedia {
+    position: relative;
+}
+
+.socialmedia ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialmedia ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedia ul li i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.utils .menu {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    background: #FF4800;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 13px;
+    gap: 5px;
+}
+
+.menu .bar {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.menu .bar:nth-child(2) {
+    width: 50%;
+}
+
+.wrap .banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .logo {
+    max-width: 155px;
+    filter: invert(1);
+}
+
+.banner .ba-text {
+    margin-top: 5px;
+    color: #FF4800;
+    font-family: 'frank';
+    font-size: 13px;
+}
+
+.banner h1 {
+    font-family: 'brixton';
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+.wrap .id-form {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.id-form form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wrap .logout {
+    position: relative;
+    padding: 5PX 10PX;
+    background: #FF4800;
+    font-family: 'frank';
+    color: #fff;
+    font-size: 14px;
+    border: none;
+}
+
+form input,
+form select {
+    width: 80%;
+    background: rgba(255, 255, 255, .50);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'frank';
+    color: #fff;
+}
+
+.id-form input::placeholder {
+    color: #fff;
+}
+
+form .check {
+    margin-top: 10px;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    background: #FF4800;
+    font-family: 'frank';
+    color: #fff;
+    font-size: 13px;
+    border: none;
+}
+
+.wrap .success {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Teko';
+    font-size: 18px;
+}
+
+.wrap .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 5px;
+    background: #000;
+    border-top: 1px solid #999;
+}
+
+.footer ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer ul li {
+    position: relative;
+    list-style: none;
+}
+
+.footer ul li:first-child::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 80px;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+}
+
+.footer ul li .p-logo {
+    width: 70px;
+}
+
+.footer ul li .k-logo {
+    width: 80px;
+}
+
+.footer .f-desc {
+    color: #999;
+    font-family: 'Teko';
+    font-size: 15px;
+}
+
+.footer .tos {
+    color: #999;
+    font-family: 'Teko';
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+@media(min-width: 600px) {
+
+    .wrap,
+    .wrap .headers {
+        width: 400px;
+    }
+}
